@@ -6,7 +6,7 @@ const zopfli = require('node-zopfli');
 
 const app = express();
 const upload = multer();
-const port = 3000;
+const port = process.env.port || 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
